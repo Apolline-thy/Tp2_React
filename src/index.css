@@ -1,1 +1,81 @@
 @import "tailwindcss";
+
+@theme inline {
+  --clr-lime-green: var(--lime-green);
+  --clr-bright-red: var(--bright-red);
+  --clr-facebook: var(--facebook);
+  --clr-twitter: var(--twitter);
+  --clr-instagram-start: var(--instagram-start);
+  --clr-instagram-end: var(--instagram-end);
+  --clr-youtube: var(--youtube);
+
+  --clr-toggle-dark-start: var(--toggle-dark-start);
+  --clr-toggle-dark-end: var(--toggle-dark-end);
+  --clr-toggle-light: var(--toggle-light);
+
+  --clr-dark-bg: var(--dark-bg);
+  --clr-dark-top-bg: var(--dark-top-bg);
+  --clr-dark-card-bg: var(--dark-card-bg);
+  --clr-dark-text: var(--dark-text);
+  --clr-dark-white: var(--dark-white);
+
+  --clr-light-bg: var(--light-bg);
+  --clr-light-top-bg: var(--light-top-bg);
+  --clr-light-card-bg: var(--light-card-bg);
+  --clr-light-text: var(--light-text);
+  --clr-light-title: var(--light-title);
+
+  --background-image-bg: var(--gradient-primary);
+}
+
+@layer base {
+  :root {
+    --lime-green: hsl(163, 72%, 41%);
+    --bright-red: hsl(356, 69%, 56%);
+    --facebook: hsl(208, 92%, 53%);
+    --twitter: hsl(203, 89%, 53%);
+    --instagram-start: hsl(37, 97%, 70%);
+    --instagram-end: hsl(329, 70%, 58%);
+    --youtube: hsl(348, 97%, 39%);
+
+    --toggle-dark-start: hsl(210, 78%, 56%);
+    --toggle-dark-end: hsl(146, 68%, 55%);
+    --toggle-light: hsl(230, 22%, 74%);
+
+    --dark-bg: hsl(230, 17%, 14%);
+    --dark-top-bg: hsl(232, 19%, 15%);
+    --dark-card-bg: hsl(228, 28%, 20%);
+    --dark-text: hsl(228, 34%, 66%);
+    --dark-white: hsl(0, 0%, 100%);
+
+    --light-bg: hsl(0, 0%, 100%);
+    --light-top-bg: hsl(225, 100%, 98%);
+    --light-card-bg: hsl(227, 47%, 96%);
+    --light-text: hsl(228, 12%, 44%);
+    --light-title: hsl(230, 17%, 14%);
+
+    --instagram-gradient: linear-gradient(
+      90deg,
+      var(--instagram-start) 0%,
+      var(--instagram-end) 100%
+    );
+    --dark-toggle-gradient: linear-gradient(
+      90deg,
+      var(--toggle-dark-start) 0%,
+      var(--toggle-dark-end) 100%
+    );
+  }
+
+  .dark-mode {
+    color: var(--dark-white);
+    background-color: var(--dark-bg);
+  }
+
+  body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: var(--light-bg);
+    color: var(--light-title);
+  }
+}
