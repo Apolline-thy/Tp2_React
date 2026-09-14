@@ -1,29 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
 
 @theme inline {
-  --clr-lime-green: var(--lime-green);
-  --clr-bright-red: var(--bright-red);
-  --clr-facebook: var(--facebook);
-  --clr-twitter: var(--twitter);
-  --clr-instagram-start: var(--instagram-start);
-  --clr-instagram-end: var(--instagram-end);
-  --clr-youtube: var(--youtube);
+  --color-lime-green: var(--lime-green);
+  --color-bright-red: var(--bright-red);
+  --color-facebook: var(--facebook);
+  --color-twitter: var(--twitter);
+  --color-instagram-start: var(--instagram-start);
+  --color-instagram-end: var(--instagram-end);
+  --color-youtube: var(--youtube);
 
-  --clr-toggle-dark-start: var(--toggle-dark-start);
-  --clr-toggle-dark-end: var(--toggle-dark-end);
-  --clr-toggle-light: var(--toggle-light);
+  --color-toggle-dark-start: var(--toggle-dark-start);
+  --color-toggle-dark-end: var(--toggle-dark-end);
+  --color-toggle-light: var(--toggle-light);
 
-  --clr-dark-bg: var(--dark-bg);
-  --clr-dark-top-bg: var(--dark-top-bg);
-  --clr-dark-card-bg: var(--dark-card-bg);
-  --clr-dark-text: var(--dark-text);
-  --clr-dark-white: var(--dark-white);
-
-  --clr-light-bg: var(--light-bg);
-  --clr-light-top-bg: var(--light-top-bg);
-  --clr-light-card-bg: var(--light-card-bg);
-  --clr-light-text: var(--light-text);
-  --clr-light-title: var(--light-title);
+  --color-theme-top-bg: var(--theme-top-bg);
+  --color-theme-light-top-bg: var(--theme-light-top-bg);
+  --color-theme-card: var(--theme-card);
+  --color-theme-text: var(--theme-text);
+  --color-theme-text-muted: var(--theme-text-muted);
+  --color-theme-border: var(--theme-border);
 
   --background-image-bg: var(--gradient-primary);
 }
@@ -41,6 +37,13 @@
     --toggle-dark-start: hsl(210, 78%, 56%);
     --toggle-dark-end: hsl(146, 68%, 55%);
     --toggle-light: hsl(230, 22%, 74%);
+
+    --theme-top-bg: hsl(225, 100%, 98%);
+    --theme-light-top-bg: hsl(225, 100%, 98%);
+    --theme-card: hsl(227, 47%, 96%);
+    --theme-text: hsl(230, 17%, 14%);
+    --theme-text-muted: hsl(228, 12%, 44%);
+    --theme-border: hsl(227, 47%, 96%);
 
     --dark-bg: hsl(230, 17%, 14%);
     --dark-top-bg: hsl(232, 19%, 15%);
@@ -72,8 +75,8 @@
   }
 
   body {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
     font-size: 15px;
     background-color: var(--light-bg);
     color: var(--light-title);
