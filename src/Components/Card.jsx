@@ -4,7 +4,12 @@ const topBarStyles = {
   Instagram: "bg-gradient-to-r from-instagram-start to-instagram-end",
   Youtube: "bg-youtube",
 };
+
 function Card({ platform, icon, user, followers, today }) {
+  const todayColor = today.startsWith("-")
+    ? "text-bright-red"
+    : "text-lime-green";
+
   return (
     <div className="bg-theme-card relative overflow-hidden rounded-md py-6 text-center">
       <div
@@ -20,7 +25,7 @@ function Card({ platform, icon, user, followers, today }) {
           FOLLOWERS
         </h2>
       </div>
-      <p className="text-theme-text-muted text-sm font-bold">{today}</p>
+      <p className={`text-sm font-bold ${todayColor}`}>{today}</p>
     </div>
   );
 }
