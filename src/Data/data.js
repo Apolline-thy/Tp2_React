@@ -1,35 +1,40 @@
+import iconFacebook from "../assets/images/icon-facebook.svg";
+import iconTwitter from "../assets/images/icon-twitter.svg";
+import iconInstagram from "../assets/images/icon-instagram.svg";
+import iconYouTube from "../assets/images/icon-youtube.svg";
+
 const data = [
   {
     id: 1,
     platform: "Facebook",
+    icon: iconFacebook,
     user: "@nathanf",
     followers: 1987,
     today: "+12",
-    color: "facebook",
   },
   {
     id: 2,
     platform: "Twitter",
+    icon: iconTwitter,
     user: "@nathanf",
     followers: 1044,
     today: "-99",
-    color: "twitter",
   },
   {
     id: 3,
     platform: "Instagram",
+    icon: iconInstagram,
     user: "@realnathanf",
     followers: 11283,
     today: "+1099",
-    color: "instagram",
   },
   {
     id: 4,
     platform: "YouTube",
+    icon: iconYouTube,
     user: "Nathan F.",
     followers: 8239,
     today: "-144",
-    color: "youtube",
   },
 ];
 
